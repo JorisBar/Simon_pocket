@@ -1,0 +1,20 @@
+# --- Firmware (STM32CubeIDE) ---
+Debug/
+Release/
+*.launch
+
+# --- Hardware (KiCad / Altium temp files) ---
+*-backups/
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+History/
+__Previews/
+
+# --- Mechanical (CAD temp files) ---
+*.lck
+~$*
+
+# --- OS Hidden Files ---
+.DS_Store
+Thumbs.db
