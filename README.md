@@ -2,7 +2,7 @@
 
 ![Finished PCB Photo](docs/images/hero-photo.png)
 
-This project was created to occupy the minds of people wanting a break from modern day distractions. Price and form factor were prioritized from day one and lead to certain design choises.
+A pocket sized memory training game 
 
 ---
 
@@ -22,16 +22,12 @@ This project was created to occupy the minds of people wanting a break from mode
 - **Battery:** the CR2032 was chosen due to compatible nominal voltage (3V), compact size, wide adoption
 - **Sound system:** buzzers/speakers had to be omitted due to high internal resistance of the battery
 - **Microcontroller:** the STM32F030c6t6 was chosen due to low price (0.5€ @ 30+ Qty) and good documentation and support
-- **Power Budget:** the MCU had to operate mostly STOP mode to lower standby current to 6uA ensuring battery life for multiple years
-- **Key Specs:**
-  - **Main Controller:** STM32G431KB (Arm Cortex-M4 @ 170MHz)
-  - **Power Subsystem:** Buck-Boost regulator (3.3V–12V input -> 5V @ 2A output)
-  - **PCB Specs:** 4-layer FR4, 1/1/1/1 oz Cu, 1.6mm thickness, controlled 50Ω impedance traces
+- **Power system:** due to space constraints, a dedicated power button was not possible. Every button is configured to wake up the MCU from STOP mode
 ---
 
-## 🏗️ System Architecture
+## 🏗️ Hardware Architecture
 
-![Block Diagram](docs/images/block-diagram.png)
+![Block Diagram](Media/Simon_pocket_hardware_block_diagram.drawio.svg)
 
 ### Core Component Choices
 - **MCU (STM32G431):** Selected for integrated high-speed op-amps and hardware CORDIC math accelerator.
