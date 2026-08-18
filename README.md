@@ -3,6 +3,7 @@
 ![Finished PCB Photo](docs/images/hero-photo.png)
 
 A pocket sized memory training game 
+The Simon_pocket is a pocked sized memory training game designed for on-the-go 
 
 ---
 
@@ -19,19 +20,15 @@ A pocket sized memory training game
 
 ## Conponent selection
 
-- **Battery:** the CR2032 was chosen due to compatible nominal voltage (3V), compact size, wide adoption
-- **Sound system:** buzzers/speakers had to be omitted due to high internal resistance of the battery
-- **Microcontroller:** the STM32F030c6t6 was chosen due to low price (0.5€ @ 30+ Qty) and good documentation and support
-- **Power system:** due to space constraints, a dedicated power button was not possible. Every button is configured to wake up the MCU from STOP mode
+- **Battery:** The CR2032 was chosen due to compatible nominal voltage (3V), compact size and accessibility.
+- **Sound system:** Buzzers/speakers had to be omitted due to high internal resistance of the battery
+- **Microcontroller:** The STM32F030C6T6 was chosen for being inexpensive (0.5€ @ 30+ Qty) and having good documentation and support
+- **Power system:** Due to space constraints, a dedicated power button was not possible. Every button is configured to wake up the MCU from STOP mode
 ---
 
 ## 🏗️ Hardware Architecture
 
 ![Block Diagram](Media/Simon_pocket_hardware_block_diagram.drawio.svg)
-
-### Core Component Choices
-- **MCU (STM32G431):** Selected for integrated high-speed op-amps and hardware CORDIC math accelerator.
-- **Power (TPS62840):** Chosen for low quiescent current (60nA) to maximize battery longevity during sleep mode.
 
 ---
 
@@ -39,11 +36,9 @@ A pocket sized memory training game
 
 ![PCB Routing Screenshot](docs/images/pcb-layout.png)
 
-### Layer Stackup (4-Layer)
-1. **Top (Signal / High-Speed):** Critical traces, impedance-matched differential pairs.
-2. **Inner 1 (GND):** Continuous ground plane for signal return paths and shielding.
-3. **Inner 2 (Power):** Split power planes (3.3V, 5V, VBUS).
-4. **Bottom (Signal / Power):** Non-critical routing and thermal copper pours.
+### Layer Stackup (2-Layer)
+1. **Top (Signal / Power):** MCU, LED and button traces. Power distribution.
+2. **Bottom (Ground / Power):** Negative battery contact. Power distribution.
 
 ### Key Layout Highlights
 - **High-Speed USB:** Routed as 90Ω differential pairs with matched lengths (within ±0.1mm tolerance).
@@ -72,6 +67,6 @@ A pocket sized memory training game
 
 ## 🧰 Tools & Software Used
 
-- **CAD / EDA:** KiCad 8.0
+- **EDA:** KiCad 10.0
 - **Simulation:** LTspice (Power supply ripple & transient response)
 - **Measurement:** Siglent SDS1104X-E Oscilloscope, Saleae Logic Pro 8
