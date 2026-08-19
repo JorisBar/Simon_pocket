@@ -2,28 +2,16 @@
 
 ![Finished PCB Photo](docs/images/hero-photo.png)
 
-A pocket sized memory training game 
-The Simon_pocket is a pocked sized memory training game designed for on-the-go 
+Simon_pocket is a pocked sized memory training game. It works by having players repeat button sequences that get longer each round.
 
----
-
-## 🎯 Constraints and design considerations
-
-- **Battery selection:** the CR2032 was chosen due to compatible nominal voltage (3V), compact size, wide adoption
-- **Lack of sound:** buzzers/speakers had to be omitted due to high internal resistance of the battery
-- **Power Budget:** the MCU had to operate mostly STOP mode to lower standby current to 6uA ensuring battery life for multiple years
-- **Key Specs:**
-  - **Main Controller:** STM32G431KB (Arm Cortex-M4 @ 170MHz)
-  - **Power Subsystem:** Buck-Boost regulator (3.3V–12V input -> 5V @ 2A output)
-  - **PCB Specs:** 4-layer FR4, 1/1/1/1 oz Cu, 1.6mm thickness, controlled 50Ω impedance traces
 ---
 
 ## Conponent selection
 
-- **Battery:** The CR2032 was chosen due to compatible nominal voltage (3V), compact size and accessibility.
+- **Battery:** The CR2032 was chosen due to easy to work with nominal voltage (3V), compact size and availability.
 - **Sound system:** Buzzers/speakers had to be omitted due to high internal resistance of the battery
 - **Microcontroller:** The STM32F030C6T6 was chosen for being inexpensive (0.5€ @ 30+ Qty) and having good documentation and support
-- **Power system:** Due to space constraints, a dedicated power button was not possible. Every button is configured to wake up the MCU from STOP mode
+- **Power system:** Due to space constraints, a dedicated power button was not possible. Instead, every button is configured to wake up the MCU from STOP mode
 ---
 
 ## 🏗️ Hardware Architecture
@@ -38,7 +26,7 @@ The Simon_pocket is a pocked sized memory training game designed for on-the-go
 
 ### Layer Stackup (2-Layer)
 1. **Top (Signal / Power):** MCU, LED and button traces. Power distribution.
-2. **Bottom (Ground / Power):** Negative battery contact. Power distribution.
+2. **Bottom (Ground / Power):** Negative battery contact and ground plane. Power distribution.
 
 ### Key Layout Highlights
 - **High-Speed USB:** Routed as 90Ω differential pairs with matched lengths (within ±0.1mm tolerance).
