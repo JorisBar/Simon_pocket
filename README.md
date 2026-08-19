@@ -13,7 +13,16 @@ Simon_pocket is a pocked sized memory training game. It works by having players 
 - **Microcontroller:** The STM32F030C6T6 was chosen for being inexpensive (0.5€ @ 30+ Qty) and having good documentation and support
 - **Power system:** Due to space constraints, a dedicated power button was not possible. Instead, every button is configured to wake up the MCU from STOP mode
 ---
+## Design considerations
 
+- **Size:** The PCB diameter of 27mm was selected for being the smallest diameter that can fit the battery clip
+- **Standby current:** To minimize standby current:
+  - A low leakage PMOS was selected
+  - No LDOs or switching regulators were used
+  - The MCU operated in STOP power saving mode
+- **Microcontroller:** The STM32F030C6T6 was chosen for being inexpensive (0.5€ @ 30+ Qty) and having good documentation and support
+- **Power system:** Due to space constraints, a dedicated power button was not possible. Instead, every button is configured to wake up the MCU from STOP mode
+---
 ## 🏗️ Hardware Architecture
 
 ![Block Diagram](Media/Simon_pocket_hardware_block_diagram.drawio.svg)
