@@ -489,7 +489,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Simon_says.kicad_pro",
+    "filename": "Simon_pocket.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -620,13 +620,13 @@
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -662,7 +662,7 @@
           "group_by": false,
           "label": "LCSC PN",
           "name": "LCSC PN",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
@@ -670,7 +670,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "${EXCLUDE_FROM_BOARD}"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -724,8 +724,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Simon_says.kicad_sch",
-        "name": "Simon_says",
+        "filename": "Simon_pocket.kicad_sch",
+        "name": "Simon_pocket",
         "uuid": "48afd52e-6f9e-45f8-9c4b-1239646cbb39"
       }
     ],
@@ -735,7 +735,7 @@
   "sheets": [
     [
       "48afd52e-6f9e-45f8-9c4b-1239646cbb39",
-      "Simon_says"
+      "Simon_pocket"
     ]
   ],
   "text_variables": {},
