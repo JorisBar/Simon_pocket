@@ -8,13 +8,13 @@ Simon_pocket is a pocked sized memory training game. It works by having players 
 
 ## Gameplay
 
-![Block Diagram](Media/Simon_pocket_gameplay_diagram.drawio.svg)
+![Gameplay Diagram](Media/Simon_pocket_gameplay_diagram.drawio.svg)
 
 ---
 
 ## Hardware Architecture
 
-![Block Diagram](Media/Simon_pocket_hardware_block_diagram.svg)
+![Hardware Diagram](Media/Simon_pocket_hardware_block_diagram.svg)
 
 ---
 
@@ -38,6 +38,7 @@ Simon_pocket is a pocked sized memory training game. It works by having players 
   <img src="Media/Simon_pocket_PCB_bottom_layer.svg" width="45%" alt="PCB bottom layer" />
 </p>
 
+![PCB Schematic](Media/Simon_pocket_schematic.svg)
 ### Layer Stackup (2-Layer)
 1. **Top (Signal / Power):** MCU, LED and button traces. Power distribution.
 2. **Bottom (Ground / Power):** Negative battery contact and ground plane. Power distribution.
