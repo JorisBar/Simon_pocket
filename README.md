@@ -53,7 +53,7 @@ Simon_pocket is a pocked sized memory training game. It works by having players 
 ## Code
 The code was written in bare metal CMSIS C using the STM32CubeIDE. To upload the code an ST-LINK V2 has to be connected to the programming contacts on the PCB.
 
-- **Microcontroller:** The STM32F030C6T6 was chosen for being inexpensive (0.5€ @ 30+ Qty) and having good documentation and support.
+
 
 
 ---
