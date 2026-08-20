@@ -34,7 +34,7 @@ Simon_pocket is a pocked sized memory training game. It works by having players 
 
 ## PCB Design & Layout Details
 <p align="center">
-  
+  <img src="Media/Simon_pocket_PCB_top_layer.svg" width="45%" alt="PCB top layer" />
   <img src="Media/Simon_pocket_PCB_bottom_layer.svg" width="45%" alt="PCB bottom layer" />
 </p>
 
