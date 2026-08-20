@@ -8,6 +8,7 @@ Simon_pocket is a pocked sized memory training game. It works by having players 
 
 ## Gameplay
 
+![Block Diagram](Media/high_quality/Simon_pocket_gameplay_diagram.drawio.svg)
 
 ---
 
