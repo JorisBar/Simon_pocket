@@ -6,30 +6,32 @@ Simon_pocket is a pocked sized memory training game. It works by having players 
 
 ---
 
-## Conponent selection
+## Gameplay
 
-- **Battery:** The CR2032 was chosen due to easy to work with nominal voltage (3V), compact size and availability.
-- **Sound system:** Buzzers/speakers had to be omitted due to high internal resistance of the battery
-- **Microcontroller:** The STM32F030C6T6 was chosen for being inexpensive (0.5€ @ 30+ Qty) and having good documentation and support
-- **Power system:** Due to space constraints, a dedicated power button was not possible. Instead, every button is configured to wake up the MCU from STOP mode
----
-## Design considerations
 
-- **Size:** The PCB diameter of 27mm was selected for being the smallest diameter that can fit the battery clip
-- **Standby current:** To minimize standby current:
-  - A low leakage PMOS was selected
-  - No LDOs or switching regulators were used
-  - The MCU operated in STOP power saving mode
-- **Microcontroller:** The STM32F030C6T6 was chosen for being inexpensive (0.5€ @ 30+ Qty) and having good documentation and support
-- **Power system:** Due to space constraints, a dedicated power button was not possible. Instead, every button is configured to wake up the MCU from STOP mode
 ---
-## 🏗️ Hardware Architecture
+
+## Hardware Architecture
 
 ![Block Diagram](Media/Simon_pocket_hardware_block_diagram.png)
 
 ---
 
-## 📐 PCB Design & Layout Details
+## Conponent Selection and Design Considerations
+
+- **Microcontroller:** The STM32F030C6T6 was chosen for being inexpensive (0.5€ @ 30+ Qty) and having good documentation and support.
+- **Battery:** The CR2032 was selected because of a compatable nominal voltage (3V), compact size and availability.
+- **Sound system:** Buzzers/speakers had to be omitted due to the high internal resistance of the battery.
+- **Power system:** Due to space constraints, a dedicated power button was not possible. Instead, every button is configured to wake up the MCU from STOP mode.
+- **Size:** The PCB diameter of 27mm was selected for being the smallest diameter that could fit the battery holder.
+- **Standby current:** To minimize standby current:
+  - A low leakage curent PMOS was selected.
+  - No LDOs or switching regulators were used.
+  - The MCU operates mostly in STOP power saving mode.
+
+---
+
+## PCB Design & Layout Details
 <p align="center">
   <img src="Media/Simon_pocket_PCB_top_layer_background.png" width="45%" alt="PCB top layer" />
   <img src="Media/Simon_pocket_PCB_bottom_layer_background.png" width="45%" alt="PCB bottom layer" />
@@ -43,6 +45,14 @@ Simon_pocket is a pocked sized memory training game. It works by having players 
 - **High-Speed USB:** Routed as 90Ω differential pairs with matched lengths (within ±0.1mm tolerance).
 - **Analog Isolation:** Dedicated analog ground region connected to digital GND at a single star-ground point near the ADC.
 - **Thermal Design:** Thermal vias placed under the main regulator to sink heat into internal copper planes.
+
+---
+
+## Code
+The code was written in bare metal CMSIS C using the STM32CubeIDE. To upload the code an ST-LINK V2 has to be connected to the programming contacts on the PCB.
+
+- **Microcontroller:** The STM32F030C6T6 was chosen for being inexpensive (0.5€ @ 30+ Qty) and having good documentation and support.
+
 
 ---
 
