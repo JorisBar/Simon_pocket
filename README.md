@@ -2,7 +2,7 @@
 
 ![Finished PCB Photo](docs/images/hero-photo.png)
 
-Simon_pocket is a pocked sized memory training game. It works by having players repeat button sequences that get longer each round.
+Simon_pocket is a pocked sized memory training game. It works by having players repeat button sequences that get longer each round. The project includes a custom PCB, bare metal programming for an STM32 MCU and a 3D modeled and printed housing.
 
 ---
 
@@ -50,12 +50,19 @@ Simon_pocket is a pocked sized memory training game. It works by having players 
 
 ---
 
-## Code
+## Programming
 The code was written in bare metal CMSIS C using the STM32CubeIDE. To upload the code an ST-LINK V2 has to be connected to the programming contacts on the PCB.
 
+### Code structure
 ![Event-driven low power code structure](Media/Simon_pocket_event_driven_code_structure_diagram.drawio.svg)
+
+### State machine transitions
 ![State machine transitions](Media/Simon_says_state_machine_transition_diagram.drawio.svg)
 
+
+---
+## 3D modeling and printing
+The housing was modeled using Autodesk Fusion. It was printed using the Bambu Lab A1 mini 3D printer.
 
 ---
 
@@ -69,13 +76,6 @@ The code was written in bare metal CMSIS C using the STM32CubeIDE. To upload the
 
 ---
 
-## 🛠️ Design Iterations & Lessons Learned
-
-- **Rev A Bug:** Ground plane beneath the RF antenna was not properly cleared, degrading wireless range by ~40%.
-- **Rev B Fix:** Added antenna cutout area according to datasheet guidelines, restoring expected range.
-- **Trade-off:** Chose QFN over BGA components to allow manual hot-air rework on a bench without X-ray inspection.
-
----
 
 ## 🧰 Tools & Software Used
 
