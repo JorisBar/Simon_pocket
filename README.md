@@ -1,8 +1,11 @@
 # Simon_pocket – A pocket version of the classic Simon says game
 
-![Finished PCB Photo](docs/images/hero-photo.png)
+<p align="center">
+  <img src="Media/Simon_pocket_real_PCB_front_image.jpg" width="45%" alt="PCB top layer" />
+  <img src="Media/Simon_pocket_real_PCB_back_image.jpg" width="45%" alt="PCB bottom layer" />
+</p>
 
-Simon_pocket is a pocked sized memory training game. It works by having players repeat button sequences that get longer each round. The project includes a custom PCB, bare metal programming for an STM32 MCU and a 3D modeled and printed housing.
+**Simon_pocket is a pocked sized memory training game. It works by having players repeat button sequences that get longer each round. The project includes a custom PCB, bare metal programming for an STM32 MCU and a 3D modeled and printed housing.**
 
 ---
 
@@ -63,7 +66,7 @@ The code was written in bare metal CMSIS C using the STM32CubeIDE. To upload the
 ---
 ## 3D modeling and printing
 The housing was modeled using Autodesk Fusion. It was printed using the Bambu Lab A1 mini 3D printer.
-
+![Fusion Workspace](Media/Simon_pocket_fusion_workspace.png)
 ---
 
 ## 🧪 Validation & Test Results
