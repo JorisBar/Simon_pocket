@@ -19,3 +19,7 @@ __Previews/
 # --- OS Hidden Files ---
 .DS_Store
 Thumbs.db
+
+# --- Media ---
+Media_storage/
+
