@@ -5,7 +5,7 @@
 </p>
 
 
-**Simon_pocket is a pocked sized memory training game. It works by having players repeat button sequences that get longer each round. The project includes a custom PCB, bare metal programming for an STM32 MCU and a 3D modeled and printed housing.**
+**Simon_pocket is a pocked sized memory training game. Players have to repeat a button sequence that gets longer each round. The project includes a custom PCB, bare metal programming for an STM32 MCU and a 3D printed housing.**
 
 ---
 
@@ -24,9 +24,9 @@
 ## Conponent Selection and Design Considerations
 
 - **Microcontroller:** The STM32F030C6T6 was chosen for being inexpensive (0.5€ @ 30+ Qty) and having good documentation and support.
-- **Battery:** The CR2032 was selected because of a compatable nominal voltage (3V), compact size and availability.
+- **Battery:** The CR2032 was selected because of the 3V nominal voltage, compact size and availability.
 - **Sound system:** Buzzers/speakers had to be omitted due to the high internal resistance of the battery.
-- **Power system:** Due to space constraints, a dedicated power button was not possible. Instead, every button is configured to wake up the MCU from STOP mode.
+- **Power on:** Due to space constraints, a dedicated power button was not possible. Instead, every button is configured to wake up the MCU from STOP mode.
 - **Size:** The PCB diameter of 27mm was selected for being the smallest diameter that could fit the battery holder.
 - **Standby current:** To minimize standby current:
   - A low leakage curent PMOS was selected.
