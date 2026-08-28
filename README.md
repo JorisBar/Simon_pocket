@@ -59,7 +59,7 @@ The code was written in bare metal CMSIS C using the STM32CubeIDE. To upload the
 ![Event-driven low power code structure](Media/Simon_pocket_event_driven_code_structure_diagram.drawio.svg)
 
 ### State machine transitions
-![State machine transitions](Media/Simon_says_state_machine_transition_diagram.drawio.svg)
+![State machine transitions](Media/Simon_pocket_state_machine_transition_diagram.drawio.svg)
 
 
 ---
