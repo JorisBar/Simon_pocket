@@ -5,7 +5,7 @@
 </p>
 
 
-**Simon_pocket is a pocket sized memory training game. Players have to repeat a button sequence that gets longer each round. The project includes a custom PCB, bare metal programming for an STM32 MCU and a 3D printed housing.**
+**Simon_pocket is a pocket sized memory training game. Players have to repeat a button sequence that gets longer each round. This project includes a custom PCB, bare metal programming for an STM32 MCU and a 3D printed housing.**
 
 ---
 
@@ -49,6 +49,13 @@
 1. **Top (Signal / Power):** MCU, LED and button traces. Power distribution.
 2. **Bottom (Ground / Power):** Negative battery contact and ground plane. Power distribution.
 
+### PCB panel
+A PCB panel was designed to decrease the cost of each PCB.
+<p align="center">
+  <img src="Media/Simon_pocket_PCB_panel.jpg" width="70%" alt="PCB panel" />
+</p>
+
+
 
 ---
 
@@ -64,7 +71,7 @@ The code was written in bare metal CMSIS C using the STM32CubeIDE. To upload the
 
 ---
 ## 3D modeling and printing
-The housing was modeled using Autodesk Fusion. It was printed using the Bambu Lab A1 mini 3D printer.
+The housing was modeled using Autodesk Fusion. It was printed using a Bambu Lab A1 mini 3D printer.
 
 ![Fusion Workspace](Media/Simon_pocket_fusion_workspace.png)
 ---
